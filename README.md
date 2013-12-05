@@ -22,7 +22,15 @@ You will need to relaunch Adobe Illustrator after installing the script.
 
 ### Batch Processing Files
 
-More to come ...
+1. Open the Actions palette in Illustrator: Window > Actions
+2. Create a new Action Set and give it a meaningful name (meaningful to you)
+3. Create a new Action named Resize Artboard in the set you just created
+4. Select the action in the palette by clicking on it once
+5. Find the Action Options menu (the inverted triangle with four horizontal lines in the upper right corner of the Actions palette)
+6. Select "Insert Menu Item ..." from the Action Options menu
+7. A dialog with a single entry field will appear. You do not need to manually enter a value. Instead, select File > Scripts > ResizeArtboard. The field will be populated automatically.
+8. Click "OK" on the dialog
+9. You can now use this Action in a batch script. For instructions on setting up an Illustrator Batch job, see [The Adobe Help Site](http://help.adobe.com/en_US/illustrator/cs/using/WS714a382cdf7d304e7e07d0100196cbc5f-62b3a.html#WS714a382cdf7d304e7e07d0100196cbc5f-62a7a)
 
 ### Known Issues
 
