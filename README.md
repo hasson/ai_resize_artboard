@@ -9,4 +9,16 @@ Use this Adobe Illustrator Script Extension to resize the artboard to a user-def
 
 ## Installation
 
-to come ...
+Download the ResizeArtboard.jsx file and copy to Illustrator/Presets/{language}/Scripts/
+
+### Running the Script
+
+More to come ...
+
+### Batch Processing Files
+
+More to come ...
+
+### Known Issues
+
+More to come ...
