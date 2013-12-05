@@ -1,4 +1,12 @@
 ai_resize_artboard
 ==================
 
-Resize a single artboard to a user-provided size and center the art work.
+This script is based on the script shrinkABtoFitArt.jsx by Carlos Canto. 
+
+== Description
+
+Use this Adobe Illustrator Script Extension to resize the artboard to a user-defined size, then center the artwork on the artboard.
+
+== Installation
+
+to come ...
