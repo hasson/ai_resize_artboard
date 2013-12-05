@@ -26,4 +26,7 @@ More to come ...
 
 ### Known Issues
 
-More to come ...
+2013-12-05 - The script was created for a very specific use case: To resize the artboard for vector icons and to center the icon.
+2013-12-05 - The artboard is assumed to be square.
+2013-12-05 - The script has not been tested with more than one artboard. It is known to work well with a single artboard.
+2013-12-05 - In order to center the artwork, the script adds every element to a new group. The items are not un-grouped after they are centered (not yet anyway).
