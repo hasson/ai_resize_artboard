@@ -24,12 +24,12 @@ else {
         // If you're running this script on a single file, uncomment this line and 
         // comment out the hard-coded size variable on the subsequent line
         
-        // var size = Number(Window.prompt("Enter Artboard Size", 32, "Resize Artboard"));
+        var size = Number(Window.prompt("Enter Artboard Size as a positive integer", 32, "Resize Artboard"));
         
         // If you're running this script as a batch, use a hard-coded size variable
         // else you will get a prompt on each iteration through your file list.
         
-        var size = 32;
+        // var size = 32;
         
         if ((isNaN(size)) || size < 1) {
             alert("Please enter a positive numeric value.");
