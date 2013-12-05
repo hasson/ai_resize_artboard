@@ -22,6 +22,23 @@ You will need to relaunch Adobe Illustrator after installing the script.
 
 ### Batch Processing Files
 
+Before setting up the Batch Action, you will need to make a simple change to the JavaScript Extension code.
+
+1. Open the Illustrator/Presets/{language}/Scripts/ResizeArtboard.jsx file in a plain text editor
+2. Comment out line 27 that reads
+
+<code>
+var size = Number(Window.prompt("Enter Artboard Size as a positive integer", 32, "Resize Artboard"));
+</code>
+
+3. Un-comment line 32 that reads:
+
+<code>`var size = 32`</code>
+
+The value you set represents the size (square) of the artboard in pixels.
+
+#### Setting up the Batch Action
+
 1. Open the Actions palette in Illustrator: Window > Actions
 2. Create a new Action Set and give it a meaningful name (meaningful to you)
 3. Create a new Action named Resize Artboard in the set you just created
