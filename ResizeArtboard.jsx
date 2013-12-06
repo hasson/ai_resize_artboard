@@ -40,7 +40,7 @@ else {
             var bounds = board.artboardRect;
             
             for (i = 0; i < doc.layers.length; i++) { 
-                doc.layers.length[i].hasSelectedArtwork = true; 
+                doc.layers[i].hasSelectedArtwork = true; 
             }
             
             var group = doc.groupItems.add();
