@@ -14,6 +14,11 @@ if (app.documents.length < 1) {
 }
 else {
 
+    var board;
+    var bounds;
+    var group;
+    var size, width, height;
+    var x1, y1, x2, y2;
     var doc = app.activeDocument;
     
     if (doc.pageItems.length < 1) { 
@@ -24,7 +29,7 @@ else {
         // If you're running this script on a single file, uncomment this line and 
         // comment out the hard-coded size variable on the subsequent line
         
-        var size = Number(Window.prompt("Enter Artboard Size as a positive integer", 32, "Resize Artboard"));
+        size = Number(Window.prompt("Enter Artboard Size as a positive integer", 32, "Resize Artboard"));
         
         // If you're running this script as a batch, use a hard-coded size variable
         // else you will get a prompt on each iteration through your file list.
@@ -36,21 +41,21 @@ else {
         }
         else {
                   
-            var board  = doc.artboards[doc.artboards.getActiveArtboardIndex()];
-            var bounds = board.artboardRect;
+            board  = doc.artboards[doc.artboards.getActiveArtboardIndex()];
+            bounds = board.artboardRect;
             
             for (i = 0; i < doc.layers.length; i++) { 
                 doc.layers[i].hasSelectedArtwork = true; 
             }
             
-            var group = doc.groupItems.add();
+            group = doc.groupItems.add();
             
             for (i = 0; i < doc.selection.length; i++) {
                 doc.selection[i].moveToBeginning(group);
             }
 
-            var width  = group.width;
-            var height = group.height;
+            width  = group.width;
+            height = group.height;
           
             // If the artwork is larger than the artboard, resize the artboard to the 
             // size of the artwork
@@ -58,15 +63,15 @@ else {
             if (width > size)  size = width;
             if (height > size) size = height;
             
-            // The bounds follow a standard X-Y axis and measure form the center.
+            // The bounds are plotted on a Cartesian Coordinate System.
             // So a 32 x 32 pixel artboard with have the following coords:
             // (assumes the artboard is positioned at 0, 0)
             // x1 = -16, y1 = 16, x2 = 16, y2 = -16
 
-            var x1 = bounds[0];
-            var y1 = bounds[1];
-            var x2 = bounds[0] + size;
-            var y2 = bounds[1] - size;
+            x1 = bounds[0];
+            y1 = bounds[1];
+            x2 = bounds[0] + size;
+            y2 = bounds[1] - size;
             
             board.artboardRect = [x1, y1, x2, y2];
             
