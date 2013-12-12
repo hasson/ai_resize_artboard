@@ -1,4 +1,4 @@
-ai_resize_artboard
+Ai Resize Artboard
 ==================
 
 This script is based on the script shrinkABtoFitArt.jsx by Carlos Canto. 

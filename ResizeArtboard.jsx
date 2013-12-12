@@ -10,7 +10,7 @@
 //       from the group after the group has been centered
 
 if (app.documents.length < 1) {
-    alert ("There are no open documents.");
+    alert("There are no open documents.");
 }
 else {
 
@@ -32,7 +32,7 @@ else {
         // var size = 32;
         
         if ((isNaN(size)) || size < 1) {
-            alert("Please enter a positive numeric value.");
+            alert("Please enter a numeric value that is greater than zero.");
         }
         else {
                   
